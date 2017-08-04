@@ -17,6 +17,7 @@
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+  .margin2 {margin-top: 100px; margin-bottom: 100px;}
   .bg-0 {
       /* The image used */
       background-image: url("Media/team.jpg");
@@ -59,6 +60,24 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+  .strokeme {
+      color: white;
+      font-size: 250%;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  .img {
+    position: relative;
+    float: left;
+    width:  400px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
   </style>
 </head>
 <body>
@@ -76,11 +95,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">THE COMPETITION</a></li>
+        <li><a href="Pages/competition.html">THE COMPETITION</a></li>
         <li><a href="Pages/mechanical.html">MECHANICAL</a></li>
         <li><a href="Pages/electrical.html">ELECTRICAL</a></li>
         <li><a href="Pages/software.html">SOFTWARE</a></li>
-        <li><a href="#">OUR TEAM</a></li>
+        <li><a href="Pages/ourteam.html">OUR TEAM</a></li>
       </ul>
     </div>
   </div>
@@ -88,21 +107,23 @@
 
 <!-- First Container -->
 <div class="container-fluid bg-0 text-center">
-  <h1 class="margin"> <strong> Channel 4 News Team Presents </strong> </h1>
-  <h2 class="margin"> An ENPH 253 Production </h2>
-  <h3 class="margin"> Brought to you by the creators of NOTHING ELSE </h3>
+  <p class="margin2"></p>
+  <h1 class="margin strokeme"> <strong> Channel 4 News Team Presents </strong> </h1>
+  <h2 class="margin strokeme"> An ENPH 253 Production </h2>
+  <h3 class="margin strokeme"> Brought to you by the creators of NOTHING ELSE </h3>
+  <p class="margin2"></p>
 </div>
 
 <!-- First and a Half Container -->
 <div class="container-fluid bg-3 text-center">
   <h3 class="margin"><strong>Veronica "The Bot" Corningstone</strong></h3>
-  <img src="Media/veronica.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Veronica" width="750">
+  <img src="Media/veronica.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Veronica" width="650">
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">The Competition</h3>
-  <img src = "Media/surface.PNG" class="img-responsive margin" style="display:inline" alt="Competition Surface" width="1000">
+  <a href = "Pages/competition.html"><img src = "Media/surface.PNG" class="img-responsive margin" style="display:inline" alt="Competition Surface" width="1000"></a>
   <p> Veronica was designed and built to compete in the 2017 ENPH 253 Robot Competition. This year's theme: </p>
   <p> <strong> Mission Impossible: Rogue Plushies </strong> </p>
   <p> <a href = "http://projectlab.engphys.ubc.ca/enph253-2017/competition-2017/"> Click here </a> to learn more about the competition on the ENPH 253 website. </p>
@@ -117,22 +138,22 @@
   <div class="row">
     <div class="col-sm-4">
       <p> Mechanical </p>
-      <a href = "Pages/mechanical.html"><img src="Media/mechanical.jpg" class="img-responsive margin" style="width:100%" alt="Mechanical"></a>
+      <a href = "Pages/mechanical.html"><img src="Media/mechanical.jpg" class="img img-responsive margin" style="width:100%" alt="Mechanical"></a>
     </div>
     <div class="col-sm-4">
       <p> Electrical </p>
-      <a href = "Pages/electrical.html"><img src="Media/electrical.jpg" class="img-responsive margin" style="width:100%" alt="Electrical"></a>
+      <a href = "Pages/electrical.html"><img src="Media/tinah.jpg" class="img img-responsive margin" style="width:100%" alt="Electrical"></a>
     </div>
     <div class="col-sm-4">
       <p> Software </p>
-      <a href = "Pages/software.html"><img src="Media/software.jpeg" class="img-responsive margin" style="width:100%" alt="Software"></a>
+      <a href = "Pages/software.html"><img src="Media/github.png" class="img img-responsive margin" style="width:100%" alt="Software"></a>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Shamelessly Stolen From <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+  <p> This message brought to you by the Channel 4 News Team </p>
 </footer>
 
 </body>
