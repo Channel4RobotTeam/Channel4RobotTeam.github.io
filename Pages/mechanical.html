@@ -18,6 +18,7 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .margin2 {margin-top: 175px; margin-bottom: 175px;}
+  .margin3 {margin-top: 45px;}
   .bg-0 {
       /* The image used */
       background-image: url("../Media/anchormanheader.jpg");
@@ -103,7 +104,110 @@
 
 <!-- First and a Half Container -->
 <div class="container-fluid bg-3 text-center">
-  <p class = "margin"> Under Construction </p>
+
+  <!-- CAD block */ -->
+  <h1>Computer-Aided Design (CAD)</h1>
+  <p class="margin" style="padding: 0 20%;" align="justify"> All of the CAD for this robot was done in <a href = "https://www.onshape.com/">Onshape</a> in order to make collaboration and accessibility as simple as possible. We made detailed CAD models for each component of the robot to make the fabrication and assembly process seamless and fast and to ensure that each component was as easily manufacturable as possible. </p>
+  <img src="../Media/arm.PNG" class="img-responsive" style="display:inline" alt="Veronica" width="300">
+  <p class="margin"><i>CAD arm model</i></p>
+
+  <HR width="100%">
+
+  <!-- Chassis block */ -->
+  <h1 class="margin3">Chassis</h1>
+  <p style="padding: 0 20%;" align="justify">The chassis was constructed using pieces of laser cut hardboard which were press-fit together to ensure that the build was strong, stable, and quick to assemble. A large amount of time was spent in the CAD stage of the design to make sure that the pieces fit together as precisely as possible.</p>
+  <p class="margin" style="padding: 0 20%;" align="justify">The electrical system was centralized on the back divider of the chassis using racks of PCB’s (Printed Circuit Boards) to maximize accessibility in the case of electrical failures and troubleshooting.</p>
+  <div class="row margin" style="padding: 0 10%;">
+    <div class="col-sm-3">
+      <img src="../Media/chassis1.jpg" class="img-responsive" style="display:inline" alt="Chassis" width="300">
+      <p><i>Front view of chassis with basket</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/chassis2.jpg" class="img-responsive" style="display:inline" alt="Chassis" width="300">
+      <p><i>PCB (Printed Circuit Board) racks</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/chassis6.jpg" class="img-responsive" style="display:inline" alt="Chassis" width="207">
+      <p><i>Mounted arm on chassis</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/chassis4.jpg" class="img-responsive" style="display:inline" alt="Chassis" width="300">
+      <p><i>Overhead view of chassis</i></p>
+    </div>
+  </div>
+
+  <HR width="100%">
+
+  <!-- Arm -->
+  <h1 class="margin3">Arm</h1>
+  <p style="padding: 0 20%;" align="justify">­The arm was designed to maximize its limited space on the chassis and to make the retrieval of agents as simple as possible. It was constructed out of water jet pieces of aluminum that were bent and riveted together to ensure that it was stable but light enough to be raised and lowered quickly, and the pincers were made of laser cut hardboard.</p>
+  <p style="padding: 0 20%;" align="justify">­The idea is that the agents will be retrieved with the pincers and then would fall straight through the arm into the basket in order to eliminate unnecessary motions.</p>
+  <p class="margin" style="padding: 0 20%;" align="justify">­Both the arm and the pincer are actuated by geared servo motors. The arm is raised and lowered using a 3:1 gear ratio made of 6mm thick PMMA plastic, and the pincer is opened and closed using a 2:1 gear ratio made of laser cut 3mm thick hardboard. The linkages for the pincers were assembled using locknuts to eliminate the possibility unscrewing from the torsion of the opening and closing motion as well as to make replacement easy in case the linkages broke or needed to be replaced.</p>
+  <div class="row margin" style="padding: 0 10%;">
+    <div class="col-sm-3">
+      <img src="../Media/arm5.jpeg" class="img-responsive" style="display:inline" alt="Arm" width="225">
+      <p><i>Assembled arm before being mounted</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/arm2.jpg" class="img-responsive" style="display:inline" alt="Arm" width="225">
+      <p><i>Pincer servo and gear mechanism</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/arm3.jpg" class="img-responsive" style="display:inline" alt="Arm" width="225">
+      <p><i>Pincer and paddles for picking up agents</i></p>
+    </div>
+    <div class="col-sm-3">
+      <img src="../Media/arm4.jpg" class="img-responsive" style="display:inline" alt="Arm" width="225">
+      <p><i>Close up of arm actuator system</i></p>
+    </div>
+  </div>
+
+  <HR width="100%">
+
+  <!-- Zipline and Lift System -->
+  <h1 class="margin3">Zipline and Lift System</h1>
+  <p style="padding: 0 20%;" align="justify">The lift is actuated using a winch / pulley system and a servo motor that was modded for continuous motion. This was designed for fast and easy assembly as well as to maximize the amount of height gain in the smallest amount of space on the chassis.</p>
+  <p class="margin" style="padding: 0 20%;" align="justify">­The zipline basket is made of laser cut hardboard that was press fit together. The designs and cut outs were partially for aesthetic purposes, but also to make the basket as light as possible. In order to reduce the accuracy needed for locating the zipline, the hook for the basket was spring loaded so that it could slide onto the bar from any angle. The spool was 3D printed to perfectly fit the contour of the zipline bar.</p>
+  <div class="row margin" style="padding: 0 15%;">
+    <div class="col-sm-6">
+      <img src="../Media/lift1.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>Modified servo mounted under chassis</i></p>
+    </div>
+    <div class="col-sm-6">
+      <img src="../Media/lift2.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>Spool which attaches to zipline</i></p>
+    </div>
+    <div class="col-sm-6">
+      <img src="../Media/lift3.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>Inside view of basket</i></p>
+    </div>
+    <div class="col-sm-6">
+      <img src="../Media/lift4.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>View underneath raised lift</i></p>
+    </div>
+  </div>
+
+  <HR width="100%">
+
+  <!-- Fabrication Techniques -->
+  <h1 class="margin3">Fabrication Techniques</h1>
+  <p style="padding: 0 20%;" align="justify">Our major fabrication methods were laser cutting and waterjet cutting. These methods were ideal because they ensured fast manufacturing and prototyping given, as well as precise fitting parts. This was essential for the assembly of the chassis which was constructed using laser cut pieces of hardboard that were press-fit together.</p>
+  <p class="margin" style="padding: 0 20%;" align="justify">The body of the arm was made out of water jet pieces of aluminum, and all of the gears for the pincer and raising and lowering of the chute were made of laser cut PMMA and hardboard.</p>
+  <div class="row margin" style="padding: 0 15%;">
+    <div class="col-sm-4">
+      <img src="../Media/lasercutter1.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>Laser cutter cutting acrylic gears</i></p>
+    </div>
+    <div class="col-sm-4">
+      <img src="../Media/waterjet.PNG" class="img-responsive" style="display:inline" alt="Veronica" width="225">
+      <p><i>Waterjet cutter cutting metal parts</i></p>
+    </div>
+    <div class="col-sm-4">
+      <img src="../Media/lasercutter2.jpg" class="img-responsive" style="display:inline" alt="Arm" width="400">
+      <p><i>Laser cutter cutting hardboard gears and linkages</i></p>
+    </div>
+  </div>
+
 </div>
 
 <!-- Footer -->
