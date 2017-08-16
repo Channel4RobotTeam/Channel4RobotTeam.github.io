@@ -106,22 +106,34 @@
   <!-- Modular Programming block -->
   <h1>Modular Programming</h1>
   <p class="margin" style="padding: 0 10%;" align="justify">The code for our robot was written in the Arduino IDE. We had one source file which made function calls to various C header files. These header files contained function declarations and definitions, as well as constants used throughout the program.</p>
-  <ul>
-    <li style="padding: 0 10%;" align="left">
+  <ul style="padding: 0 10%;" align="left">
+    <li>
       <p><strong>Actuators</strong>: This header file contained functions to turn the motors used to lower and raise the arm, open and close the pincers, as well as raise and lower the lift.</p>
     </li>
-    <li style="padding: 0 10%;" align="left">
+    <li>
       <p><strong>Constants</strong>: All of the constant variables used in our program were stored in this file to be used anywhere in the code.</p>
+    </li>
+    <li>
+      <p><strong>Menu</strong>: The Menu class allowed us to be able to input information to the TINAH board while testing without having to reconnect to a computer. We could decide which stage of the course to run, and we could modify various parameters such as speed or threshold values.</p>
+    </li>
+    <li>
+      <p><strong>Navigate</strong>: Our navigation header was designed to be used for robot movements on the course that did not involve tape following. For example, one of the functions in this file was used to locate the zipline on the competition surface.</p>
+    </li>
+    <li>
+      <p><strong>Tape</strong>: The three main functions in this file were all used for tape following along the surface. We had a separate function for tape following around the tank which allowed us to make corrections to the robot's position when it stopped at a tick mark to pick up an agent.</p>
     </li>
   </ul>
 
-  <!-- <HR width="100%"> -->
+  <HR width="100%">
 
   <!-- Git -->
   <h1 class="margin3">Git</h1>
   <p class="margin" style="padding: 0 10%;" align="justify">Our code repository is hosted on Github. Using git simplified the process of collaboration by allowing us both to work simultaneously on separate files or functions without fear of overwriting each other's progress.</p>
 
   <HR width="100%">
+
+  <h3 class="margin3">State Diagram</h3>
+  <img src="../Media/stateDiagrams.jpg" class="img-responsive" style="display:inline" width="300">
 </div>
 
 <!-- Footer -->
