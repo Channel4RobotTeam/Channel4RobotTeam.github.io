@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Veronica Software</title>
+  <title>Software</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -71,6 +71,9 @@
   }
   </style>
 </head>
+
+<link rel="shortcut icon" href="../Media/four.png" />
+
 <body>
 
 <!-- Navbar -->
@@ -130,11 +133,26 @@
   <!-- Git -->
   <h1 class="margin3">Git</h1>
   <p class="margin" style="padding: 0 10%;" align="justify">Our <a href="https://github.com/Channel4RobotTeam/VeronicaGamma">code repository</a> is hosted on Github. Using git simplified the process of collaboration by allowing us both to work simultaneously on separate files or functions without fear of overwriting each other's progress.</p>
+  <a href="https://github.com/Channel4RobotTeam/VeronicaGamma"><img src="../Media/githubpage.jpg" class="img-responsive" style="display:inline" width="40%"></a>
+  <p class="margin"><i>Click to view our repository on github</i></p>
 
   <HR width="100%">
 
+  <!-- State Diagram -->
   <h1 class="margin3">State Diagram</h1>
-  <img src="../Media/SoftwareStateDiagrams.png" class="img-responsive" style="display:inline" width="50%">
+  <img src="../Media/SoftwareStateDiagrams.png" class="img-responsive margin" style="display:inline" width="50%">
+
+  <HR width="100%">
+
+  <h1 class="margin3">PID Control</h1>
+  <p class="margin" style="padding: 0 10%;" align="justify">To navigate the competition surface Veronica followed black tape with information from two reflectance sensors (QRD1114) mounted underneath the chassis by utilizing PID (Proportional Integral Derivative) control. The tape following code used a PID algorithm to determine and implement motor corrections which kept Veronica driving directly over the tape. Tuning was done experimentally. The final algorithm can be found in the tape.h file located in our github repository.</p>
+  <video width="500" controls>
+    <source src="../Media/tapefollowing.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <p><i>Veronica tape following by PID control</i></p>
+
 </div>
 
 <!-- Footer -->
