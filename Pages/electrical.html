@@ -17,6 +17,7 @@
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+  .margin3 {margin-top: 45px;}
   .bg-0 {
       /* The image used */
       background-image: url("../Media/anchormanheader.jpg");
@@ -68,6 +69,11 @@
       -1px 1px 0 #000,
       1px 1px 0 #000;
   }
+  .rot90 {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
   </style>
 </head>
 <body>
@@ -102,7 +108,52 @@
 
 <!-- First and a Half Container -->
 <div class="container-fluid bg-3 text-center">
-  <p class = "margin"> Under Construction </p>
+
+  <!-- Electrical Schematic -->
+  <h1 class="margin3"> Electrical Overview </h1>
+  <img src="../Media/schematic.png" class="img-responsive margin" style="display:inline" alt="Veronica" width="50%">
+
+  <HR width="100%">
+
+  <!-- Brains and Brawn -->
+  <h1 class="margin3"> Brains and Brawn </h1>
+  <p class="margin"> Veronica is controlled by the <a href="http://projectlab.engphys.ubc.ca/enph253-2017/tinah-2017/">TINAH board</a>, and extensions shield which connects to the <a href="http://wiring.org.co/hardware/previous.html">Wiring Board</a>.</p>
+  <img src="../Media/brain.jpg" class="img-responsive" style="display:inline" alt="" width="400">
+  <p class="margin"><i> Connected TINAH on Veronica </i></p>
+
+  <HR width="100%">
+
+  <!-- Power, Power -->
+  <h1 class="margin3"> Power, Power </h1>
+  <video width="300" controls>
+    <source src="../Media/power.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <p><i> "Power, Power" clip from Anchorman (2004) </i></p>
+  <p class="margin" style="padding: 0 10%;" align="justify">The TINAH and H-Bridges/DC Motors are powered by a 14.8 V nominal lithium-polymer battery, and the sensor circuitry are powered by two 7.4 V nominal lithium-polymer batteries. The division in batteries per different purpose on Veronica ensured that the sensitive sensor circuitry didn’t fail if the current draw from the DC motors became high. The servo motors used to lift the basket to the zipline, lift the arm, and open the claws were each powered by their own stepped down regulated voltage from the 14.8 V battery. In addition, the usage of a star point connection for ground made sure that there was no noise in sensor signals and no ground loops.</p>
+
+  <HR width="100%">
+
+  <!-- Drive -->
+  <h1 class="margin3"> Drive </h1>
+  <p class="margin" style="padding: 0 10%;" align="center"> Two H-Bridges are incorporated in Veronica to drive both of her motors at high power. The H-Bridges are constructed from the following design: </p>
+  <img src="../Media/zenerbridge.png" class="img-responsive" style="display:inline" alt="" width="40%">
+  <p><i>H-bridge circuit diagram using zener diodes</i></p>
+  <br>
+  <img src="../Media/hbridge.jpg" class="img-responsive" style="display:inline" alt="" width="40%">
+  <p class="margin" style="padding: 0 30%;" align="justify"><i>Meticulous attention to detail and a careful soldering job made for beautifully neat and compact H-Bridges that were easy to debug and simple to replace components.</i></p>
+  <p class="margin" style="padding: 0 10%;" align="justify">Veronica used a total of four reflectance sensors (QRD1114) to follow the tape along the competition surface, detect the holding tank, and detect tape intersections where agents were held captive.</p>
+
+  <HR width="100%">
+
+  <!-- "Alarmed Gate" IR Detection -->
+  <h1 class="margin3"> "Alarmed Gate" IR Detection </h1>
+  <p class="margin" style="padding: 0 10%;" align="justify">To rescue the agents without being captured, Veronica needed to pass through the alarmed gate while the alarm was disabled. A 10kHz and 1kHz signal from the gate beacon determined whether the gate was armed or disarmed respectively. Two infrared detectors (QSD124) were used for two independent 1kHz and 10kHz detector circuits to digest the signal coming into the infrared detectors to something simple to use in software to the TINAH. This was done mainly by filtering the desired signal, converting the resulting wave into a DC signal of the wave’s amplitude, and then amplifying that so it was usable in software.</p>
+  <img src="../Media/1khz.jpg" class="img-responsive" style="display:inline" alt="" width="40%">
+  <img src="../Media/10khz.jpg" class="img-responsive" style="display:inline" alt="" width="40%">
+  <p class="margin" style="padding: 0 10%;" align="justify"><i>Both above circuits (1kHz detector circuit and 10kHz detector circuit) have a buffer, a DC block, two filters, an amplifier, a peak detector, and an additional buffer/amplifier to transform the signal received from the infrared detectors (QSD124) to a usable, high/low signal input to the TINAH board. Once again, a neat circuit layout and careful soldering work made for robust PCBs.</i></p>
+
 </div>
 
 <!-- Footer -->
